@@ -1,3 +1,12 @@
+var items = document.querySelectorAll(".item");
+var radios = document.querySelectorAll("input");
+
+items.forEach(function (item, index) {
+  item.addEventListener("click", function () {
+    radios[index].checked = true;
+  });
+});
+
 const MIN_SPEED = 1.5;
 const MAX_SPEED = 2.5;
 
